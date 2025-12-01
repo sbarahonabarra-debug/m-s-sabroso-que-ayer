@@ -1,16 +1,26 @@
 Insumo,Unidad_costo_base,Contenido_pack,Precio_pack_CLP
-Harina Fuerte 0,kg,1,880
-Harina Fina 0000,kg,1,880
-Levadura,kg,1,2500
-Sal fina,kg,1,300
-Azucar Granulada,kg,1,1200
-Mantequilla sin Sal,kg,1,11000
-Leche Entera,ml,1000,1000
-Cacao,kg,1,10000
-Polvo de Hornear,kg,1,3500
-Cafe molido,u,10,1000
-Harina integral,kg,1,1100
-Harina (base masa tradicional),kg,1,880
-Semillas mix,kg,1,6000
-Agua,ml,1000,0
-
+Harina Fuerte 0,kg,1.0,880
+Harina Fina 0000,kg,1.0,880
+Levadura,kg,1.0,2500
+Sal fina,kg,1.0,300
+Azucar Granulada,kg,1.0,1200
+Mantequilla sin Sal,kg,1.0,11000
+Leche Entera,ml,1000.0,1000
+Cacao,kg,1.0,10000
+Polvo de Hornear,kg,1.0,3500
+Cafe molido,u,10.0,1000
+Harina integral,kg,1.0,1100
+Harina (base masa tradicional),kg,1.0,880
+Semillas mix,kg,1.0,6000
+Agua,ml,1000.0,0
+Manteca,kg,1.0,4000
+Cebolla,kg,1.0,6500
+Carne vacuno,kg,1.0,7000
+Ajo,kg,1.0,6000
+Aceite,ml,1000.0,2200
+Comino,kg,0.25,4990
+Ají de color,kg,1.0,3782
+Orégano,kg,0.02,890
+Pasas,kg,1.0,10000
+Aceitunas,kg,1.0,6990
+Huevo,un,12.0,3250
