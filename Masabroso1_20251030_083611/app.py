@@ -606,9 +606,9 @@ else:
     y_ventas = 0.0
     y_cogs   = 0.0
     for sku in sel:
-        uds_default = int(DEFAULT_COMP_UNITS.get(_norm_txt(sku), 0))
+        uds_default = float(DEFAULT_COMP_UNITS.get(_norm_txt(sku), 0.0))
         uds = st.sidebar.number_input(
-            f"{sku} (ud/día)", min_value=0, max_value=5000, value=uds_default, step=1, key=f"y_ud_{sku}"
+            f"{sku} (ud/día)", min_value=0.0, max_value=5000.0, value=uds_default, step=0.1, key=f"y_ud_{sku}"
         )
         p = float(price_map.get(_norm_txt(sku), 0.0))
         c = float(costo_sum.get(sku, 0.0))
