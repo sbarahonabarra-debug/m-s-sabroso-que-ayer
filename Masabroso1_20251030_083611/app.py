@@ -2380,8 +2380,7 @@ with tabs[11]:
 with tabs[12]:
     st.subheader("VAN & TIR (flujo a equity, mensual)")
 
-    # ======= Parámetros =========
-    # ======= Parámetros =========
+     # ======= Parámetros =========
     cA, cB = st.columns(2)
     ke_anual = cA.number_input(
         "Tasa de descuento anual (Ke, %)",
@@ -2392,14 +2391,14 @@ with tabs[12]:
         key="van_ke_anual",
     )
 
-# Máximo horizonte que realmente tiene el modelo (hoy: cantidad de meses de EBITDA)
+    # Máximo horizonte que realmente tiene el modelo (hoy: cantidad de meses de EBITDA)
     max_horizonte = int(len(MODEL["EBITDA"]))
 
     horizonte = cB.number_input(
         "Horizonte (meses)",
         min_value=1,
-        max_value=max_horizonte,          # ← ya no puedes poner 36 si solo hay 12 meses
-        value=min(12, max_horizonte),
+        max_value=max_horizonte,   # no puedes elegir más meses de los que existen
+        value=max_horizonte,       # por defecto usa todo el horizonte disponible
         step=1,
         key="van_horizonte",
     )
@@ -2408,9 +2407,13 @@ with tabs[12]:
     dso = c1.number_input("DSO (días de cobro)", 0, 120, 0, 1, key="van_dso")
     dio = c2.number_input("DIO (días de inventario)", 0, 120, 7, 1, key="van_dio")
     dpo = c3.number_input("DPO (días de pago a prov.)", 0, 120, 30, 1, key="van_dpo")
-    usar_ct = c4.checkbox("Modelar capital de trabajo (DSO/DIO/DPO)", True, key="van_usar_ct")
+    usar_ct = c4.checkbox(
+        "Modelar capital de trabajo (DSO/DIO/DPO)",
+        True,
+        key="van_usar_ct",
+    )
 
-# ======= Series base (primeros 'h' meses) =========
+    # ======= Series base (primeros 'h' meses) =========
     h = int(horizonte)
     km = (1.0 + ke_anual / 100.0) ** (1.0 / 12.0) - 1.0  # tasa mensual
 
