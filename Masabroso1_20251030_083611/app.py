@@ -271,9 +271,9 @@ CAPITAL     = read_first("10_Estructura_Capital.csv", default=pd.DataFrame({
                 "Valor":[20000000,2000000,500000]
               }))
 MATERIAL    = read_first("04_Materiales.csv")
-CAPEX_TAB   = read_first("06_consolidado.csv")
+CAPEX_TAB   = read_first("03_Capex.csv")
 if CAPEX_TAB.empty:
-    CAPEX_TAB = read_first("03_Capex.csv")
+    CAPEX_TAB = read_first("06_consolidado.csv")
 
 # NUEVOS: planillas OFICIALES ya unificadas
 COSTOS_UNIF = read_first("COSTOS_LINEA_UNIFICADO_APP.csv")
