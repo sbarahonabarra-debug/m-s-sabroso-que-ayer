@@ -20,9 +20,8 @@ Equipamiento,Cocinilla Electrica,1,46990,60
 Equipamiento,Laminadora,1,3129990,60
 Equipamiento,Rebanadora de pan,1,590000,60
 Equipamiento,Sobadora,1,1499000,60
-Equipamiento,Cafetera La Rocca Venezia,1,4100000
-Equipamiento,Molinillo para café Melitta Calibra,1,175042
+Equipamiento,Cafetera La Rocca Venezia,1,4100000,60
+Equipamiento,Molinillo para café Melitta Calibra,1,175042,60
 Equipamiento,Panini,1,199990,60
-Garantía arriendo (recuperable),1,5000000
-Remodelación local,1,5000000
-
+Garantia arriendo,Garantía arriendo (recuperable),1,5000000,0
+Remodelacion,Remodelación local,1,5000000,60
