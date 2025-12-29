@@ -473,10 +473,10 @@ if phi_cafe > 1.0:
 # 5) Bases diarias por línea (día neutro)
 st.sidebar.subheader("Bases diarias por línea (día neutro)")
 c = st.sidebar.columns(4)
-base_pan = c[0].number_input("Pan (piezas/día)",     0, 10000, 450, 10, key="sd_base_pan")  # ← 450
-base_bol = c[1].number_input("Bollería (ud/día)",    0, 10000,  75,  5, key="sd_base_bol")
-base_pas = c[2].number_input("Pastelería (ud/día)",  0, 10000,  15,  1, key="sd_base_pas")
-base_caf = c[3].number_input("Café (tazas/día)",     0, 10000,  35,  5, key="sd_base_caf")
+base_pan = c[0].number_input("Pan (piezas/día)",     0, 10000, 945, 10, key="sd_base_pan")  # ← 450
+base_bol = c[1].number_input("Bollería (ud/día)",    0, 10000,  100,  5, key="sd_base_bol")
+base_pas = c[2].number_input("Pastelería (ud/día)",  0, 10000,  20,  1, key="sd_base_pas")
+base_caf = c[3].number_input("Café (tazas/día)",     0, 10000,  45,  5, key="sd_base_caf")
 
 # Opciones de comportamiento
 redondear_pan_kg = st.sidebar.checkbox("Redondear Pan (kg) a entero", True, key="sd_round_pan_kg")
@@ -546,9 +546,9 @@ def _find_col(df, keys):
 
 # Defaults de unidades/día para 3 SKUs frecuentes
 DEFAULT_COMP_UNITS = {
-    _norm_txt("Complementarios Huevo (1 unidad)"): 16,
-    _norm_txt("Complementarios Mermelada (1 kg)"): 2,
-    _norm_txt("Complementarios Queso (1 kg)"): 1,
+    _norm_txt("Complementarios Huevo (1 unidad)"): 18,
+    _norm_txt("Complementarios Mermelada (1 kg)"): 0.25,
+    _norm_txt("Complementarios Queso (1 kg)"): 0.1,
 }
 
 st.session_state.setdefault("comp_ventas_dia_override", 0.0)
