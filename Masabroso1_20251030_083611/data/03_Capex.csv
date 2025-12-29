@@ -1,4 +1,4 @@
-﻿Categoria,Item,Cantidad,Precio_unit_CLP,Vida_util_meses
+Categoria,Item,Cantidad,Precio_unit_CLP,Vida_util_meses
 Equipamiento,Horno de piso (3 camaras),1,4640990,60
 Equipamiento,Amasadora (20 kg ideal),1,836990,60
 Equipamiento,Batidora (10 lt),1,492990,60
@@ -25,5 +25,4 @@ Equipamiento,Molinillo para café Melitta Calibra,1,175042
 Equipamiento,Panini,1,199990,60
 Garantía arriendo (recuperable),1,5000000
 Remodelación local,1,5000000
-
 
